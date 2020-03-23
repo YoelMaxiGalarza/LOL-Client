@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width:100%;
+    max-width: 90%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url(imagenes/BG.png);
+}
+.container-fluid {
+    margin: 0 5rem;
+    padding: 0;
+}
+.iconos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.iconos li {
+    list-style-type: none;
+}
+.iconos li a {
+    padding-right: 5px;
+    display:block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    line-height: 50px ;
+    font-size: 3.3em;
+    text-align: center;
+    margin-top:20px;
+    margin-right: 20px;
+    color: rgb(100, 127, 160);
+    background: #343a40 ;
+    transition: .5s;
+    text-decoration: none;
+}
+.icons li a:hover {
+    transform: scale(1.2);
+    text-decoration: none;
+}
+.iconos2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.iconos2 li {
+    list-style-type: none;
+}
+.iconos2 li i {
+    padding-right: 5px;
+    display:block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    line-height: 50px ;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom:0;
+    color: rgb(100, 127, 160);
+    background: #343a40 ;
+    transition: .5s;
+    text-decoration: none;
+}
+.iconos2 li p {
+    color: white;
+    text-align: center;
+
+}
+.img-thumbnail {
+    transition: .5s;
+    background-color: #000;
+}
+
+.img-thumbnail:hover {
+    padding: .25rem;
+    background-color: rgb(255, 238, 0);
+    border: 1px solid #000;
+    border-radius: .25rem;
+    max-width: 100%;
+    height: auto;
+}
+.iconos li:nth-child(1) a:hover {
+    color: #cfc204;
+}
+.iconos li:nth-child(2) a:hover {
+    color: #cfc204;
+}
+.iconos li:nth-child(3) a:hover {
+    color: #cfc204;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(100, 127, 160);
+    transition: .5s;
+}
+
+.navbar-nav .nav-link:hover {
+    color:#cfc204 ;
+}
+
+.header {
+    border-bottom: 2px double #cfc204;
+}
+.header span {
+    width: 100%;
+     margin: 3em auto 0.7em auto;
+     font-family:'PT Serif', serif;
+     color: #cfc204;
+     border-bottom: #cfc204 double 2px;
+     padding-bottom: 2em;
+     text-align: center;
+}
+.discount {
+    position: absolute ;
+    top: 17.8em;
+    left: 5.6em;
+    color:#cfc204;
+    text-align: center;
+}
+.coverdesc {
+    top: 12em;
+}
+.preciosviejos {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 18em;
+}
+.preciosviejos div {
+    display: flex;
+    align-items: center;
+    left: 4.2%;
+}
+.preciosviejos p {
+    color: white;
+    font-family: 'PT Serif', serif;
+    font-size: 1.3em;
+    text-decoration: line-through;
+}
+.preciosactuales div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right:5%;
+}
+.preciosactuales div p {
+    color: white;
+    font-family: 'PT Serif', serif;
+    font-size: 1.3em;
+}
+.footer {
+    font-family: 'PT Serif', serif;
+}
