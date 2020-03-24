@@ -34,7 +34,7 @@ body {
     margin-top:20px;
     margin-right: 20px;
     color: rgb(100, 127, 160);
-    background: #343a40 ;
+    background: rgba(255, 255, 255, 0) ;
     transition: .5s;
     text-decoration: none;
 }
@@ -60,7 +60,7 @@ body {
     text-align: center;
     margin-bottom:0;
     color: rgb(100, 127, 160);
-    background: #343a40 ;
+    background: rgba(255, 255, 255, 0) ;
     transition: .5s;
     text-decoration: none;
 }
@@ -95,6 +95,7 @@ body {
 .navbar-nav .nav-link {
     color: rgb(100, 127, 160);
     transition: .5s;
+    font-family: 'Patua One', cursive;
 }
 
 .navbar-nav .nav-link:hover {
