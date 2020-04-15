@@ -1,86 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="match-styles.css">
     <link rel="stylesheet" href="icons.css">
     <title>Match History</title>
 </head>
-<body>
-        <div class="navbar navbar-expand-lg row" >
-            <a class="navbar-brand" href="#"><img src="images/icon.png" ></a>
-                <ul class="navbar-nav mr-auto ">
-                    <li class="nav-item active">
-                    <a class="nav-link" href="#">INICIO <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                    <a class="nav-link" href="../Profile-Resume/resume.html">PERFIL</a>
-                    </li>
-                    <li class="nav-item active">
-                    <a class="nav-link" href="#">COLECCION </a> 
-                    </li>
-                </ul>
-            <div class="navbar-nav ml-auto d-flex active my-2 my-lg-0">
-                <ul class="iconos">
-                    <li class="nav-item active">
-                        <a href="/pages/LOL-Store/store.html"><i class="icon-icondisc"></i></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="#"><i class="icon-iconbotin"></i></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a href="#"><i class="icon-iconstore"></i></a>
-                    </li>
-                </ul>
-                <ul class="iconos2">
-                    <li class="nav-item active">
-                    <i class="icon-eseicon"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
-                        <p id="blue_essence">2605</p>
-                    </li>
-                    <li class="nav-item active">
-                        <i class="icon-rpicon"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
-                        <p id="riot_points">234</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
 
-        <div class="perfil_tags">
-            <ul class="nav nav-tabs">
-                <li><a class="resumen" href="../Profile-Resume/resume.html">RESUMEN</a></li>
-                <li><a class="match_history" href="../Profile-Match_history/match-history.html">MATCH HISTORY</a></li>
-                <li><a class="clasificatoria">CLASIFICATORIA</a></li>
-                <li><a class="clubes">CLUBES</a></li>
-                <li><a class="destacados">DESTACADOS</a></li>
-                <li><a class="estadisticas">ESTADISTICAS</a></li>
+<body>
+    <div class="navbar navbar-expand-lg row">
+        <a class="navbar-brand" href="#"><img src="images/icon.png"></a>
+        <ul class="navbar-nav mr-auto ">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">INICIO <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="../Profile-Resume/resume.html">PERFIL</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">COLECCION </a>
+            </li>
+        </ul>
+        <div class="navbar-nav ml-auto d-flex active my-2 my-lg-0">
+            <ul class="iconos">
+                <li class="nav-item active">
+                    <a href="/pages/LOL-Store/store.html"><i class="icon-icondisc"></i></a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#"><i class="icon-iconbotin"></i></a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#"><i class="icon-iconstore"></i></a>
+                </li>
+            </ul>
+            <ul class="iconos2">
+                <li class="nav-item active">
+                    <i class="icon-eseicon"><span class="path1"></span><span class="path2"></span><span
+                            class="path3"></span></i>
+                    <p id="blue_essence">2605</p>
+                </li>
+                <li class="nav-item active">
+                    <i class="icon-rpicon"><span class="path1"></span><span class="path2"></span><span
+                            class="path3"></span></i>
+                    <p id="riot_points">234</p>
+                </li>
             </ul>
         </div>
-        <div class="container-fluid mt-4 ml-4">
-            <div class="first-row row">
-                <h4>partidas recientes(ultimas 20 jugadas)</h4>
-            </div>
-            <div class="second-row row">
-                <ul class="nav nav-tabs">
-                    <li><a id="general" href="#">GENERAL</a></li>
-                    <li><a href="#">TFT</a></li>
-                </ul>
-            </div>
-            <div class="history-row row"></div>
-        </div>
-        <div class="container-fluid">
-            <div class="row first">
-                <div class="row first-internal">
+    </div>
 
+    <div class="perfil_tags">
+        <ul class="nav nav-tabs">
+            <li><a class="resumen" href="../Profile-Resume/resume.html">RESUMEN</a></li>
+            <li><a class="match_history" href="../Profile-Match_history/match-history.html">MATCH HISTORY</a></li>
+            <li><a class="clasificatoria">CLASIFICATORIA</a></li>
+            <li><a class="clubes">CLUBES</a></li>
+            <li><a class="destacados">DESTACADOS</a></li>
+            <li><a class="estadisticas">ESTADISTICAS</a></li>
+        </ul>
+    </div>
+    <div class="container-fluid mt-4 ml-4">
+        <div class="first-row row">
+            <h4>partidas recientes(ultimas 20 jugadas)</h4>
+        </div>
+        <div class="second-row row">
+            <ul class="nav nav-tabs">
+                <li><a id="general" href="#">GENERAL</a></li>
+                <li><a href="#">TFT</a></li>
+            </ul>
+        </div>
+        <div class="history-row row"></div>
+    </div>
+    <div class="container-fluid matchs mt-5">
+        <div class="row">
+            <div class="col-xl-1 champion">
+                <!-- 1era columna -->
+                <span class=""><img src="./images/DianaSquare.png"></span>
+            </div>
+            <div class="col-xl-2">
+                <!-- 2da columna -->
+                <div class="row">
+                    <div class="col-xl-12 matchtype">
+                        <h3>VICTORIA</h3>
+                        <h5>ARAM</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12 summonerskills">
+                        <span><img src="./images/Flash.png" width="15%"></span>
+                        <span><img src="./images/Ignición.png" width="15%"></span>
+                    </div>
                 </div>
             </div>
-            <div class="row second">
-                <div class="row second-internal">
-
+            <div class="col-xl-4">
+                <!-- 3era columna -->
+                <div class="row">
+                    <div class="col-xl-12 items" style="background-color: yellow;">
+                        <img src="./images/Eco_de_Luden_objeto.png" alt="">
+                        <img src="./images/Eco_de_Luden_objeto.png" alt="">
+                        <img src="./images/Eco_de_Luden_objeto.png" alt="">
+                        <img src="./images/Eco_de_Luden_objeto.png" alt="">
+                        <img src="./images/Eco_de_Luden_objeto.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12 score" style="background-color: yellowgreen;">
+                        <p>
+                            <span id="kills">10</span><span>/</span><span id="deaths">5</span><span>/</span><span id="asisst">25</span>
+                            <span id="miniomskilled">29</span>
+                            <span id="gold">10,547</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <!-- 4ta columna -->
+                <div class="row">
+                    <div class="col-xl-12" style="background-color: green;">
+                        <p>S-/505 XP</p>
+                        <p>Abismo de los lamentos</p>
+                        <p>14:54 - 22/03/2020</p>
+                    </div>
                 </div>
             </div>
         </div>
-</body>
+    </div>
 </html>
