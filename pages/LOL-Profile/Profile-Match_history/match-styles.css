@@ -15,13 +15,14 @@ body{
     background-image: url(./images/nocturne.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     height: 100%;
     font-family: 'Patua One', cursive;
     color: #9d9172;
     position: absolute;
 }
-
+/* Navbar--------------------------------------------------- */
 .navbar-brand img{
     height: 50px;
 }

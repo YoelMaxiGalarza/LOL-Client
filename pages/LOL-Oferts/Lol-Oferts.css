@@ -1,18 +1,31 @@
 * {
-    margin: 0;
-    padding: 0;
-}
+    position: relative;
+              box-sizing: border-box;
+         -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+  *::before, *::after {
+              box-sizing: border-box;
+         -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+  }
+
 body {
     width:100%;
-    max-width: 90%;
+    max-width: 100%;    
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-image: url(imagenes/BG.png);
 }
-.container-fluid {
-    margin: 0 5rem;
-    padding: 0;
+/* Navbar--------------------------------------------------- */
+.navbar-brand img{
+    height: 50px;
+}
+.navbar {
+    padding: 0 5rem;
 }
 .iconos {
     display: flex;
@@ -33,12 +46,12 @@ body {
     text-align: center;
     margin-top:20px;
     margin-right: 20px;
-    color: rgb(100, 127, 160);
-    background: rgba(255, 255, 255, 0) ;
+    color: #9d9172;
+    background: transparent ;
     transition: .5s;
     text-decoration: none;
 }
-.icons li a:hover {
+.iconos li a:hover {
     transform: scale(1.2);
     text-decoration: none;
 }
@@ -59,8 +72,8 @@ body {
     font-size: 3em;
     text-align: center;
     margin-bottom:0;
-    color: rgb(100, 127, 160);
-    background: rgba(255, 255, 255, 0) ;
+    color: #9d9172;
+    background: transparent;
     transition: .5s;
     text-decoration: none;
 }
@@ -69,11 +82,61 @@ body {
     text-align: center;
 
 }
+.iconos li:nth-child(1) a:hover {
+    color: #eee4d1;
+}
+.iconos li:nth-child(2) a:hover {
+    color: #eee4d1;
+}
+.iconos li:nth-child(3) a:hover {
+    color: #eee4d1;
+}
+.navbar-nav .nav-link {
+    color: #9d9172;
+    transition: .5s;
+    font-family: 'Patua One', cursive;
+}
+.navbar-nav .nav-link:hover {
+    color:#eee4d1 ;
+}
+/* --------------------------------------------------------- */
+.perfil_tags{
+    font-family: 'Patua One', cursive;
+}
+.perfil_tags .nav-tabs>li>a.resumen {
+    margin: 0em 1em 1em 10em;
+}
+.perfil_tags .tags {
+    margin: 0em 1em 1em 1em;
+}
+.perfil_tags .nav {
+    display: flex;
+}
+.perfil_tags .nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+.perfil_tags .nav-tabs {
+    border-top: 1px solid #9d9172;
+    border-bottom: none;
+    padding-top: 0.5em;
+}
+.perfil_tags .nav-tabs>li>a {
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    color: #9d9172;
+}
+.perfil_tags .nav-tabs>li>a:hover {
+     border-color: transparent transparent #eee4d1 transparent;
+     padding-bottom: 10px;
+     color: #eee4d1;
+     transition: .5s;
+}
 .img-thumbnail {
     transition: .5s;
     background-color: #000;
 }
-
 .img-thumbnail:hover {
     padding: .25rem;
     background-color: rgb(255, 238, 0);
@@ -82,32 +145,12 @@ body {
     max-width: 100%;
     height: auto;
 }
-.iconos li:nth-child(1) a:hover {
-    color: #cfc204;
-}
-.iconos li:nth-child(2) a:hover {
-    color: #cfc204;
-}
-.iconos li:nth-child(3) a:hover {
-    color: #cfc204;
-}
-
-.navbar-nav .nav-link {
-    color: rgb(100, 127, 160);
-    transition: .5s;
-    font-family: 'Patua One', cursive;
-}
-
-.navbar-nav .nav-link:hover {
-    color:#cfc204 ;
-}
-
 .header {
     border-bottom: 2px double #cfc204;
 }
 .header span {
     width: 100%;
-     margin: 3em auto 0.7em auto;
+    margin: 0 auto 0.7em auto;
      font-family:'PT Serif', serif;
      color: #cfc204;
      border-bottom: #cfc204 double 2px;
@@ -132,7 +175,7 @@ body {
 .preciosviejos div {
     display: flex;
     align-items: center;
-    left: 4.2%;
+    padding: 0%;
 }
 .preciosviejos p {
     color: white;
@@ -140,11 +183,16 @@ body {
     font-size: 1.3em;
     text-decoration: line-through;
 }
+.preciosviejos .stockPrices{
+    margin-left: 4.3em;
+}
 .preciosactuales div {
     display: flex;
     justify-content: center;
     align-items: center;
-    right:5%;
+}
+.preciosactuales .newPrices {
+    margin-right: 9.3em;
 }
 .preciosactuales div p {
     color: white;
